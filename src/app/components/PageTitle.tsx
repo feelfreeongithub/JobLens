@@ -5,9 +5,9 @@ interface PageTitleProps {
 
 export default function PageTitle({ title, subtitle }: PageTitleProps) {
   return (
-    <div className="mb-6">
-      <h1 className="text-2xl font-bold">{title}</h1>
-      {subtitle && <p className="mt-1 text-slate-600">{subtitle}</p>}
+    <div className="mb-8">
+      <h1 className="text-3xl font-bold tracking-tight">{title}</h1>
+      {subtitle && <p className="mt-2 max-w-[60ch] text-muted">{subtitle}</p>}
     </div>
   );
 }
